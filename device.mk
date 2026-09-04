@@ -15,6 +15,9 @@ PRODUCT_SHIPPING_API_LEVEL := 36
 TARGET_SCREEN_HEIGHT := 2400
 TARGET_SCREEN_WIDTH := 1080
 
+# Dex-pre-opt exclusions
+$(call add-product-dex-preopt-module-config,MotoSignatureApp,disable)
+
 # Display
 TARGET_SCREEN_DENSITY := 390
 
@@ -73,6 +76,7 @@ $(call inherit-product, device/motorola/sm6450-common/common.mk)
 
 # Vendor
 $(call inherit-product, vendor/motorola/mumba/mumba-vendor.mk)
+$(call inherit-product-if-exists, vendor/motorola/mumba-motcamera/mumba-motcamera-vendor.mk)
 
 # Wi-Fi
 TARGET_WIFI_VARIANTS := adrastea

@@ -30,5 +30,9 @@ VENDOR_SECURITY_PATCH := $(BOOT_SECURITY_PATCH)
 BOARD_AVB_ROLLBACK_INDEX := 6
 BOARD_AVB_VBMETA_SYSTEM_ROLLBACK_INDEX := $(BOARD_AVB_ROLLBACK_INDEX)
 
+# SEPolicy
+BOARD_VENDOR_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/vendor
+
 # Vendor
 include vendor/motorola/mumba/BoardConfigVendor.mk
+-include vendor/motorola/mumba-motcamera/BoardConfigVendor.mk
