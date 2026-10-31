@@ -10,3 +10,7 @@
 
 # GPU Clock
 /sys/devices(/platform)?/soc/[a-f0-9]+.qcom,kgsl-3d0/kgsl/kgsl-3d0/max_gpuclk u:object_r:vendor_sysfs_kgsl_max_gpuclk:s0
+
+# Face
+/(vendor|system/vendor)/bin/hw/android\.hardware\.biometrics\.face-service\.face-isv u:object_r:hal_face_default_exec:s0
+/data/vendor/tetras_data(/.*)?  u:object_r:hal_face_data_file:s0
