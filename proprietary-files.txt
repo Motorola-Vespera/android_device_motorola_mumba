@@ -365,6 +365,13 @@ vendor/etc/display/qdcm_calib_data_mipi_mot_video_dummy_qhd.json
 vendor/etc/display/thermallevel_to_fps.xml
 vendor/etc/displayconfig/display_id_4630946916234099603.xml
 
+# Face
+product/etc/default-permissions/default-permissions-faceunlock.xml
+product/etc/permissions/com.motorola.faceunlock.xml
+product/etc/permissions/privapp-permissions-com.motorola.faceunlock.xml
+product/etc/sysconfig/hiddenapi-whitelist-com.motorola.faceunlock.xml
+product/priv-app/MotoFaceUnlock/MotoFaceUnlock.apk
+
 # Fingerprint
 vendor/bin/fpc_tee_test
 vendor/bin/hw/android.hardware.biometrics.fingerprint-service-jv

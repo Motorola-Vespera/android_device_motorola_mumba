@@ -27,6 +27,13 @@ TARGET_HAS_FM := true
 PRODUCT_PACKAGES += \
     FM2
 
+# Face
+PRODUCT_PACKAGES += \
+    android.hardware.biometrics.face-service.motorola
+
+PRODUCT_COPY_FILES += \
+    frameworks/native/data/etc/android.hardware.biometrics.face.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.biometrics.face.xml
+
 # Init
 PRODUCT_PACKAGES += \
     init.mmi.overlay.rc \
