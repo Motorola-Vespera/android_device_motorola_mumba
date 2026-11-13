@@ -28,3 +28,23 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
     SystemName=mumba_g
 
 PRODUCT_GMS_CLIENTID_BASE := android-motorola
+
+# Maintainer name (underscores in values convert to spaces in UI)
+DESCARTES_MAINTAINER := lostsignal-502
+
+# Processor / SoC model
+DESCARTES_PROCESSOR := Snapdragon_6s_Gen_4
+
+# Battery capacity and technology
+DESCARTES_BATTERY := 7000_mAh
+
+# Display specification
+DESCARTES_DISPLAY := 6.72_IPS_LCD_120Hz
+
+# Camera sensor resolutions (comma-separated for multi-lens setups)
+DESCARTES_CAMERA_REAR_INFO := 50,8
+DESCARTES_CAMERA_FRONT_INFO := 8
+
+# Build release type (OFFICIAL, UNOFFICIAL, NIGHTLY)
+DESCARTES_BUILD_TYPE := OFFICIAL
+
